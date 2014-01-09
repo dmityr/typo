@@ -24,8 +24,8 @@ $ gem install gossip_girl
 
 ## Usage
 
-Gem allow to exchange state and data between nodes.
-HeartBeat - allow to exchange states.
+Gem allow to exchange state and data between nodes.  
+HeartBeat - allow to exchange states.  
 DataExchange - allow to exchange data.
 
 #### HeartBeat Configuration
