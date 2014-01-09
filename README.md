@@ -24,9 +24,9 @@ $ gem install gossip_girl
 
 ## Usage
 
-Gem allow to exchange state and data between nodes.  
-HeartBeat - allow to exchange states.  
-DataExchange - allow to exchange data.
+GossipGirl allow to exchange state and data between nodes, for these purpose you should use next classes:  
+**HeartBeat** - allow to exchange states.  
+**DataExchange** - allow to exchange data.
 
 #### HeartBeat Configuration
 
@@ -48,8 +48,8 @@ Example of HeartBeat Usage:
 
 ```ruby
 configuration_hash = {
-    cluster_name: 'TestCluster',
-    address: "tcp://127.0.0.1:4000,
+    'cluster_name': 'TestCluster',
+    address: "tcp://127.0.0.1:4000",
     failure_threshold: 8,
     beat_interval: 1.2,
     seeds: {"tcp://127.0.0.1:4001"=>{}, "tcp://127.0.0.1:4002"=>{}}
