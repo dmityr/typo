@@ -34,11 +34,11 @@ Example of configuration for HeartBeat:
 
 ```ruby
 {
-    cluster_name: 'TestCluster',
-    address: "tcp://127.0.0.1:4000",
-    failure_threshold: 8,
-    beat_interval: 1.2,
-    seeds: {"tcp://127.0.0.1:4001"=>{}, "tcp://127.0.0.1:4002"=>{}}
+    :cluster_name => 'TestCluster',
+    :address => "tcp://127.0.0.1:4000",
+    :failure_threshold => 8,
+    :beat_interval => 1.2,
+    :seeds => {"tcp://127.0.0.1:4001" => {}, "tcp://127.0.0.1:4002" => {}}
 }
 ```
 
@@ -48,11 +48,11 @@ Example of HeartBeat Usage:
 
 ```ruby
 configuration_hash = {
-    'cluster_name': 'TestCluster',
-    address: "tcp://127.0.0.1:4000",
-    failure_threshold: 8,
-    beat_interval: 1.2,
-    seeds: {"tcp://127.0.0.1:4001"=>{}, "tcp://127.0.0.1:4002"=>{}}
+    :cluster_name => 'TestCluster',
+    :address => "tcp://127.0.0.1:4000",
+    :failure_threshold => 8,
+    :beat_interval => 1.2,
+    :seeds => {"tcp://127.0.0.1:4001"=>{}, "tcp://127.0.0.1:4002"=>{}}
 }
 
 heartbeat = HeartBeat.new configuration_hash
