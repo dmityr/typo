@@ -103,8 +103,8 @@ DataExchange.new
 Example of usage:
 
 ```ruby
-exchange_file = "*path-to-some-file*"
-exchange_server = "*address-of-server-where-we-want-to-send-file*"
+exchange_file = "path-to-some-file"
+exchange_server = "address-of-server-where-we-want-to-send-file"
 
 d_ex = DataExchange.new
 d_ex.bind "tcp://127.0.0.1:7777"
